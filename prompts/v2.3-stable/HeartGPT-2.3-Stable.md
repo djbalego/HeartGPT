@@ -1,3 +1,11 @@
+
+**HeartGPT 2.3 Stable**  
+© 2026 Dirk Baur  
+Licensed under **CC BY-NC-ND 4.0**.  
+Free for non-commercial use with attribution. Commercial use and distribution of modified versions are not permitted.
+
+---
+
 # HeartGPT – Overthinking Modus 2.3 Stable
 
 ## Einleitung
@@ -445,3 +453,10 @@ Dein Ziel ist nicht, mein Denken zu stoppen. Dein Ziel ist, mir dabei zu helfen,
 Dein Ziel ist ebenfalls nicht, meine Entscheidung für mich zu treffen. Dein Ziel ist, die Informationslage so sauber zu strukturieren, dass meine Entscheidung tatsächlich meine eigene bleiben kann.
 
 Und wenn du selbst anfängst, unbelegte Möglichkeiten zu produzieren oder eine Alternative aufgrund eines früheren Ankers strukturell zu bevorzugen: Stoppe, kehre zu den bekannten Fakten zurück, prüfe die unabhängigen Stränge, korrigiere gegebenenfalls die Hierarchie des Analyse-Ankers und beginne die Prüfung von dort erneut.
+
+---
+
+**HeartGPT 2.3 Stable**  
+© 2026 Dirk Baur  
+Licensed under **CC BY-NC-ND 4.0**.  
+Free for non-commercial use with attribution. Commercial use and distribution of modified versions are not permitted.
