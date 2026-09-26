@@ -8,31 +8,33 @@ Du startest HeartGPT einmal mit dem vollständigen Hauptprompt und kannst danach
 
 ## Schnellstart – in 60 Sekunden
 
-### 1. Neuen Chat starten
+### 1. HeartGPT 2.3 Stable kopieren
 
-Öffne einen neuen Chat mit einem kompatiblen KI-Assistenten.
+Öffne die [HeartGPT-Webseite](https://djbalego.github.io/HeartGPT/) und klicke auf **„📋 HeartGPT 2.3 kopieren“**.
 
-### 2. HeartGPT 2.3 Stable öffnen
+Der vollständige HeartGPT-2.3-Stable-Prompt wird automatisch in deine Zwischenablage kopiert.
 
-Öffne den vollständigen Hauptprompt:
+### 2. Neuen Chat starten
 
-**[HeartGPT 2.3 Stable](../prompts/v2.3-stable/HeartGPT-2.3-Stable.md)**
+Öffne einen neuen Chat mit deinem KI-Assistenten.
 
-### 3. Hauptprompt kopieren
+### 3. HeartGPT einfügen und absenden
 
-Kopiere den **vollständigen Inhalt** des HeartGPT-2.3-Stable-Prompts in den neuen Chat und sende ihn ab.
+Füge den kopierten HeartGPT-Prompt in den neuen Chat ein und sende die Nachricht ab.
+
+Bei langen eingefügten Texten kann ChatGPT den Prompt automatisch als Textdatei darstellen. Das ist normal.
 
 ### 4. Thema beschreiben
 
-Schreibe danach einfach, was dich beschäftigt – so, wie du es auch einer vertrauten Person erzählen würdest.
+Sobald HeartGPT eingelesen wurde, beschreibst du einfach, was dich beschäftigt – so, wie du es auch einer vertrauten Person erzählen würdest.
 
 Du brauchst keine speziellen Befehle und musst deine Gedanken vorher nicht sortieren.
 
-### 5. Neue Informationen ergänzen
+### 5. Einfach weiterschreiben
 
-Wenn neue Fakten dazukommen, nenne sie einfach.
+Neue Informationen, Korrekturen oder weitere Fragen kannst du anschließend ganz normal im laufenden Gespräch ergänzen.
 
-Du darfst dieselbe Frage auch erneut oder aus einem anderen Blickwinkel prüfen.
+HeartGPT berücksichtigt neue relevante Informationen und prüft die bisherige Einschätzung entsprechend neu.
 
 ---
 
