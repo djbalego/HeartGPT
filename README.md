@@ -43,21 +43,25 @@ Unter anderem gilt:
 
 Du musst nicht lernen, besonders „richtig“ mit HeartGPT zu sprechen.
 
-### 1. Neuen Chat öffnen
+### 1. HeartGPT 2.3 Stable kopieren
 
-Öffne einen neuen Chat mit einem kompatiblen KI-Assistenten.
+Öffne die **[HeartGPT-Webseite](https://djbalego.github.io/HeartGPT/)** und klicke auf **„📋 HeartGPT 2.3 kopieren“**.
 
-### 2. HeartGPT 2.3 Stable kopieren
+Der vollständige HeartGPT-2.3-Stable-Prompt wird automatisch in deine Zwischenablage kopiert.
 
-Öffne:
+### 2. Neuen Chat öffnen
 
-**[HeartGPT 2.3 Stable](prompts/v2.3-stable/HeartGPT-2.3-Stable.md)**
+Öffne einen neuen Chat mit deinem KI-Assistenten.
 
-Kopiere den vollständigen Prompt und füge ihn als erste Nachricht in den neuen Chat ein.
+### 3. HeartGPT einfügen und absenden
 
-### 3. Thema normal beschreiben
+Füge HeartGPT in den neuen Chat ein und sende die Nachricht ab.
 
-Danach kannst du einfach schreiben, was dich beschäftigt – so, wie du es auch einer vertrauten Person erzählen würdest.
+Bei langen eingefügten Texten kann ChatGPT den Prompt automatisch als Textdatei darstellen. Das ist normal.
+
+### 4. Thema normal beschreiben
+
+Sobald HeartGPT eingelesen wurde, kannst du einfach schreiben, was dich beschäftigt – so, wie du es auch einer vertrauten Person erzählen würdest.
 
 Zum Beispiel:
 
