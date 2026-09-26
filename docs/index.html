@@ -114,6 +114,9 @@
       text-decoration: none;
       font-weight: 650;
       transition: transform 0.15s ease;
+      border: none;
+      font: inherit;
+      cursor: pointer;
     }
 
     .button:hover {
@@ -285,10 +288,10 @@
       </p>
 
       <div class="buttons">
-        <a class="button primary"
-           href="https://github.com/djbalego/HeartGPT/blob/main/prompts/v2.3-stable/HeartGPT-2.3-Stable.md">
-          HeartGPT 2.3 starten
-        </a>
+       <button class="button primary copy-button"
+              onclick="copyHeartGPT(this)">
+          📋 HeartGPT 2.3 kopieren
+       </button>
 
         <a class="button secondary"
            href="USAGE.md">
@@ -415,10 +418,10 @@
         HeartGPT 2.3 Stable öffnen
       </a>
 
-      <a class="button secondary"
-         href="USAGE.md">
-        Vollständige Anleitung
-      </a>
+      <button class="button primary copy-button"
+          onclick="copyHeartGPT(this)">
+      📋 HeartGPT 2.3 kopieren
+      </button>
 
     </div>
   </section>
@@ -572,5 +575,39 @@
   </div>
 </footer>
 
+ <script>
+async function copyHeartGPT(button) {
+  const originalText = button.innerHTML;
+
+  try {
+    const response = await fetch(
+      "https://raw.githubusercontent.com/djbalego/HeartGPT/main/prompts/v2.3-stable/HeartGPT-2.3-Stable.md"
+    );
+
+    if (!response.ok) {
+      throw new Error("Prompt konnte nicht geladen werden.");
+    }
+
+    const prompt = await response.text();
+    await navigator.clipboard.writeText(prompt);
+
+    button.innerHTML = "✓ HeartGPT kopiert";
+
+    setTimeout(() => {
+      button.innerHTML = originalText;
+    }, 2500);
+
+  } catch (error) {
+    button.innerHTML = "Kopieren fehlgeschlagen";
+
+    setTimeout(() => {
+      button.innerHTML = originalText;
+    }, 2500);
+
+    console.error(error);
+  }
+}
+</script> 
+  
 </body>
 </html>
