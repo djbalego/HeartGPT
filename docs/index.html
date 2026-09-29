@@ -578,9 +578,9 @@
 
   </div>
 </footer>
-
+<script src="https://cdn.jsdelivr.net/npm/counterapi/dist/counter.browser.min.js"></script>
  <script>
-async function copyHeartGPT(button) {
+  async function copyHeartGPT(button) {
   const originalText = button.innerHTML;
 
   try {
@@ -612,6 +612,15 @@ async function copyHeartGPT(button) {
   }
 }
 </script> 
+<script>
+  const heartGPTCounter = new Counter({
+    workspace: "djbalegos-team-5742"
+  });
+
+  heartGPTCounter.up("heartgpt-visits")
+    .then(result => console.log("HeartGPT Visit gezählt:", result))
+    .catch(error => console.error("CounterAPI Fehler:", error));
+</script>
   
 </body>
 </html>
