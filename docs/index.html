@@ -579,47 +579,91 @@
   </div>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/counterapi/dist/counter.browser.min.js"></script>
- <script>
-  async function copyHeartGPT(button) {
-  const originalText = button.innerHTML;
 
-  try {
-    const response = await fetch(
-      "https://raw.githubusercontent.com/djbalego/HeartGPT/main/prompts/v2.3-stable/HeartGPT-2.3-Stable.md"
-    );
-
-    if (!response.ok) {
-      throw new Error("Prompt konnte nicht geladen werden.");
-    }
-
-    const prompt = await response.text();
-    await navigator.clipboard.writeText(prompt);
-
-    button.innerHTML = "✓ HeartGPT kopiert";
-
-    setTimeout(() => {
-      button.innerHTML = originalText;
-    }, 2500);
-
-  } catch (error) {
-    button.innerHTML = "Kopieren fehlgeschlagen";
-
-    setTimeout(() => {
-      button.innerHTML = originalText;
-    }, 2500);
-
-    console.error(error);
-  }
-}
-</script> 
 <script>
   const heartGPTCounter = new Counter({
     workspace: "djbalegos-team-5742"
   });
 
-  heartGPTCounter.up("heartgpt-visits")
-    .then(result => console.log("HeartGPT Visit gezählt:", result))
-    .catch(error => console.error("CounterAPI Fehler:", error));
+  // --------------------------------------------------
+  // ANONYMER BESUCHSZÄHLER
+  // Maximal 1 Zählung pro Browser innerhalb von 24 Std.
+  // --------------------------------------------------
+
+  function countHeartGPTVisit() {
+    const storageKey = "heartgpt_last_visit";
+    const now = Date.now();
+    const twentyFourHours = 24 * 60 * 60 * 1000;
+
+    try {
+      const lastVisit = localStorage.getItem(storageKey);
+
+      if (!lastVisit || (now - Number(lastVisit)) >= twentyFourHours) {
+        heartGPTCounter.up("heartgpt-visits")
+          .then(() => {
+            localStorage.setItem(storageKey, String(now));
+          })
+          .catch(error => {
+            console.error("HeartGPT Besuchszähler:", error);
+          });
+      }
+    } catch (error) {
+      // Falls localStorage blockiert ist:
+      // Seite funktioniert trotzdem ganz normal.
+      console.error("HeartGPT Besuchszähler:", error);
+    }
+  }
+
+  countHeartGPTVisit();
+
+
+  // --------------------------------------------------
+  // HEARTGPT KOPIEREN
+  // Kopierzähler wird NUR nach erfolgreichem Kopieren
+  // erhöht.
+  // --------------------------------------------------
+
+  async function copyHeartGPT(button) {
+    const originalText = button.innerHTML;
+
+    try {
+      const response = await fetch(
+        "https://raw.githubusercontent.com/djbalego/HeartGPT/main/prompts/v2.3-stable/HeartGPT-2.3-Stable.md"
+      );
+
+      if (!response.ok) {
+        throw new Error("Prompt konnte nicht geladen werden.");
+      }
+
+      const prompt = await response.text();
+
+      // Erst tatsächlich kopieren
+      await navigator.clipboard.writeText(prompt);
+
+      // Nur nach erfolgreichem Kopieren zählen
+      heartGPTCounter.up("heartgpt-copies")
+        .catch(error => {
+          // Ein Fehler beim Zähler darf das erfolgreiche
+          // Kopieren nicht beeinträchtigen.
+          console.error("HeartGPT Kopierzähler:", error);
+        });
+
+      button.innerHTML = "✓ HeartGPT kopiert";
+
+      setTimeout(() => {
+        button.innerHTML = originalText;
+      }, 2500);
+
+    } catch (error) {
+      button.innerHTML = "Kopieren fehlgeschlagen";
+
+      setTimeout(() => {
+        button.innerHTML = originalText;
+      }, 2500);
+
+      console.error(error);
+    }
+  }
 </script>
   
 </body>
