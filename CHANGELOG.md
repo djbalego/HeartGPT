@@ -5,6 +5,40 @@ In diesem Changelog werden die öffentlich veröffentlichten Versionen von Heart
 HeartGPT 2.3 Stable ist die erste öffentliche Version. Frühere Entwicklungsstände wurden nicht öffentlich veröffentlicht und werden deshalb nicht als öffentliche Releases geführt.
 
 ---
+## [2.3.1] – Stable (08.10.2026)
+
+### Neutralitätskorrektur
+
+HeartGPT 2.3.1 erweitert die bestehende Version 2.3 um zusätzliche methodische Schutzmechanismen für die neutrale Analyse mehrerer Entscheidungswege.
+
+**Verbessert:**
+- Zusätzliche Kontrolle von Reihenfolge- und Analyse-Anker-Bias.
+- Strengere Behandlung unterschiedlich umfangreicher Informationen.
+- Vermeidung vorzeitiger Gesamtpassungsbewertungen.
+- Keine zusätzliche Gewichtung durch wiederholte Zwischenbilanzen.
+- Abschlussregel für ausreichend untersuchte Entscheidungskriterien.
+- Verpflichtende methodische Kontrolle vor übergreifenden Passungsbewertungen.
+- Deutlichere Trennung zwischen belegten Einzelunterschieden und langfristiger Gesamtpassung.
+
+### Neue Dateien
+
+- `HeartGPT-2.3.1.md` – vollständiger Stable-Prompt.
+- `HeartGPT-2.3-auf-2.3.1-Update.md` – Update-Prompt für bereits laufende Chats.
+- `Chat-Transfer.md` – aktualisierte Chat-Übergabe für Version 2.3.1.
+
+### Kompatibilität
+
+Die grundlegende Struktur von HeartGPT bleibt erhalten.
+
+Bestehende HeartGPT-2.3-Chats können mithilfe des Update-Prompts auf 2.3.1 umgestellt werden. Dabei werden bisherige Nutzerinformationen beibehalten und frühere Modellbewertungen methodisch neu geprüft.
+
+### Validierung
+
+Die Neutralitätskorrektur wurde anhand fiktiver Entscheidungsszenarien mit vertauschten Wegbezeichnungen und gegensätzlichen emotionalen Ausgangslagen praktisch getestet.
+
+Die Tests zeigten eine verbesserte Trennung zwischen gegenwärtiger emotionaler Orientierung und langfristiger Beziehungspassung. Einzelne verbleibende Risiken durch wiederholte Zwischenbewertungen wurden identifiziert und durch zusätzliche Regeln adressiert.
+
+Eine vollständige Bias-Freiheit wird nicht beansprucht.
 
 ## 2.3 Stable
 
