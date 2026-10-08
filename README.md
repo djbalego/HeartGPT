@@ -133,7 +133,7 @@ HeartGPT soll dabei keine persönlichen Lebensprioritäten für den Nutzer festl
 
 Für lange Gespräche enthält HeartGPT einen eigenen Übergabe-Prompt:
 
-**[HeartGPT 2.3.1 – Chat-Übergabe](prompts/v2.3-stable/Chat-Transfer.md)**
+**[HeartGPT 2.3.1 – Chat-Übergabe](prompts/v2.3-stable/HeartGPT-2.3.1-Chat-Transfer.md)**
 
 Damit kann der relevante Faktenstand, die Chronologie, der Analyse-Anker, geprüfte Hypothesen, Korrekturen und offene Fragen für einen neuen Chat strukturiert zusammengefasst werden.
 
