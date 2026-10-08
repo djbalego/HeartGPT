@@ -6,7 +6,7 @@ Es wurde entwickelt, um zu verhindern, dass Overthinking durch immer neue hypoth
 
 HeartGPT versucht nicht, möglichst schnell zu beruhigen oder möglichst viele denkbare Erklärungen zu erzeugen. Stattdessen sollen vorhandene Informationen strukturiert, Fakten von Interpretationen getrennt und Schlussfolgerungen nach ihrer tatsächlichen Evidenz bewertet werden.
 
-> **Aktuelle Version: HeartGPT / Overthinking Modus 2.3 Stable**  
+> **Aktuelle Version: HeartGPT / Overthinking Modus 2.3.1 Stable**  
 > Erste öffentliche Stable-Version.
 
 ---
@@ -45,9 +45,9 @@ Du musst nicht lernen, besonders „richtig“ mit HeartGPT zu sprechen.
 
 ### 1. HeartGPT 2.3 Stable kopieren
 
-Öffne die **[HeartGPT-Webseite](https://djbalego.github.io/HeartGPT/)** und klicke auf **„📋 HeartGPT 2.3 kopieren“**.
+Öffne die **[HeartGPT-Webseite](https://djbalego.github.io/HeartGPT/)** und klicke auf **„📋 HeartGPT 2.3.1 kopieren“**.
 
-Der vollständige HeartGPT-2.3-Stable-Prompt wird automatisch in deine Zwischenablage kopiert.
+Der vollständige HeartGPT-2.3.1-Stable-Prompt wird automatisch in deine Zwischenablage kopiert.
 
 ### 2. Neuen Chat öffnen
 
@@ -111,7 +111,7 @@ Dadurch soll verhindert werden, dass eine später eingeführte Alternative autom
 
 ## Entscheidungshilfe
 
-HeartGPT 2.3 kann bei realen Entscheidungen über das reine Sortieren von Gedanken hinausgehen.
+HeartGPT 2.3.1 kann bei realen Entscheidungen über das reine Sortieren von Gedanken hinausgehen.
 
 Dabei soll HeartGPT:
 
@@ -133,7 +133,7 @@ HeartGPT soll dabei keine persönlichen Lebensprioritäten für den Nutzer festl
 
 Für lange Gespräche enthält HeartGPT einen eigenen Übergabe-Prompt:
 
-**[HeartGPT 2.3 – Chat-Übergabe](prompts/v2.3-stable/Chat-Transfer.md)**
+**[HeartGPT 2.3.1 – Chat-Übergabe](prompts/v2.3-1-stable/Chat-Transfer.md)**
 
 Damit kann der relevante Faktenstand, die Chronologie, der Analyse-Anker, geprüfte Hypothesen, Korrekturen und offene Fragen für einen neuen Chat strukturiert zusammengefasst werden.
 
@@ -189,7 +189,7 @@ HeartGPT soll außerdem weder den Nutzer noch andere Personen anhand einer Erzä
 
 ## Praxistest und Feedback
 
-HeartGPT 2.3 wurde durch gezielte Stresstests weiterentwickelt, unter anderem mit:
+HeartGPT 2.3.1 wurde durch gezielte Stresstests weiterentwickelt, unter anderem mit:
 
 - spät eingeführten gleichwertigen Alternativen,
 - mehreren parallelen Analyse-Strängen,
@@ -211,12 +211,17 @@ Feedback zu reproduzierbaren Problemen ist willkommen.
 
 ## Version
 
-### HeartGPT 2.3 Stable
+### HeartGPT 2.3.1 Stable
 
-Erste öffentlich veröffentlichte Stable-Version von HeartGPT.
+Aktuelle öffentlich veröffentlichte Stable-Version von HeartGPT.
+
+HeartGPT 2.3.1 enthält die Neutralitätskorrektur aus dem Praxistest der Version 2.3. Dabei wurden insbesondere Reihenfolge- und Anker-Bias, Informationsasymmetrien, vorzeitige Gesamtbewertungen und die wiederholte Verstärkung einzelner Passungsunterschiede methodisch abgesichert.
+
+Die Version 2.3.1 behält die grundlegende Struktur und die 38 Regelabschnitte von HeartGPT bei und ergänzt sie um verbindliche Regeln zur neutralen, evidenzbasierten Untersuchung mehrerer Entscheidungswege.
+
+Für bereits laufende HeartGPT-2.3-Chats steht ein separater Update-Prompt zur Verfügung. Dieser führt eine methodische Neubewertung der bisherigen Analyse nach den Regeln von HeartGPT 2.3.1 durch.
 
 Die vollständige Versionshistorie wird im `CHANGELOG.md` dokumentiert.
-
 ---
 
 ## Lizenz
