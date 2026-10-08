@@ -43,7 +43,7 @@ Unter anderem gilt:
 
 Du musst nicht lernen, besonders „richtig“ mit HeartGPT zu sprechen.
 
-### 1. HeartGPT 2.3 Stable kopieren
+### 1. HeartGPT 2.3.1 Stable kopieren
 
 Öffne die **[HeartGPT-Webseite](https://djbalego.github.io/HeartGPT/)** und klicke auf **„📋 HeartGPT 2.3.1 kopieren“**.
 
@@ -137,7 +137,7 @@ Für lange Gespräche enthält HeartGPT einen eigenen Übergabe-Prompt:
 
 Damit kann der relevante Faktenstand, die Chronologie, der Analyse-Anker, geprüfte Hypothesen, Korrekturen und offene Fragen für einen neuen Chat strukturiert zusammengefasst werden.
 
-Im neuen Chat wird zuerst HeartGPT 2.3 Stable eingefügt und anschließend die erzeugte Übergabe.
+Im neuen Chat wird zuerst HeartGPT 2.3.1 Stable eingefügt und anschließend die erzeugte Übergabe.
 
 So kann die Analyse am bisherigen Stand fortgesetzt werden, ohne die gesamte Geschichte neu erzählen zu müssen.
 
@@ -226,14 +226,24 @@ Die vollständige Versionshistorie wird im `CHANGELOG.md` dokumentiert.
 
 ## Lizenz
 
-HeartGPT soll kostenlos verfügbar sein.
+HeartGPT wird unter der **Creative Commons Namensnennung – Nicht kommerziell – Keine Bearbeitungen 4.0 International (CC BY-NC-ND 4.0)** veröffentlicht.
 
-Die genaue Open-Source-Lizenz und die Bedingungen für Weitergabe, Veränderung und kommerzielle Nutzung werden vor der ersten offiziellen Veröffentlichung festgelegt.
+- **Private Nutzung:** Kostenlos erlaubt.
+- **Weitergabe:** Erlaubt mit Namensnennung und Lizenzhinweis.
+- **Kommerzielle Nutzung:** Nicht gestattet.
+- **Bearbeitete Versionen:** Dürfen nicht ohne gesonderte Erlaubnis veröffentlicht oder weitergegeben werden.
+- **Urheber:** Dirk Baur.
+
+Die vollständigen Lizenzbedingungen findest du hier:
+
+[Creative Commons BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.de)
+
+© 2026 Dirk Baur – HeartGPT
 
 ---
 
 ## Projektstatus
 
-HeartGPT 2.3 Stable befindet sich in Vorbereitung auf die erste öffentliche Veröffentlichung.
+HeartGPT 2.3.1 Stable befindet sich in Vorbereitung auf die erste öffentliche Veröffentlichung.
 
 Neben dem GitHub-Repository entsteht eine eigene **GitHub-Pages-Webseite** für HeartGPT.
