@@ -276,7 +276,7 @@
   <section class="hero">
     <div class="container">
 
-      <span class="badge">HeartGPT 2.3 Stable</span>
+      <span class="badge">HeartGPT 2.3.1 Stable</span>
 
       <h1>Gedanken sortieren.<br>Statt Overthinking zu verstärken.</h1>
 
@@ -290,8 +290,17 @@
       <div class="buttons">
        <button class="button primary copy-button"
               onclick="copyHeartGPT(this)">
-          📋 HeartGPT 2.3 kopieren
+          📋 HeartGPT 2.3.1 kopieren
        </button>
+
+        <button class="button secondary copy-button"
+                onclick="copyUpdate(this)">
+          🔄 Bestehenden 2.3-Chat aktualisieren
+        </button>
+
+        <button class="button secondary copy-button" onclick="copyUpdate(this)">
+          🔄 Update-Prompt kopieren
+        </button>
 
         <a class="button secondary"
            href="USAGE.md">
@@ -387,7 +396,7 @@
 
         <div class="step">
           <strong>1. HeartGPT kopieren</strong>
-          Klicke auf „HeartGPT 2.3 kopieren“. Der vollständige HeartGPT-Prompt
+          Klicke auf „HeartGPT 2.3.1 kopieren“. Der vollständige HeartGPT-Prompt
           wird automatisch in deine Zwischenablage kopiert.
         </div>
 
@@ -424,7 +433,7 @@
 
       <button class="button primary copy-button"
           onclick="copyHeartGPT(this)">
-      📋 HeartGPT 2.3 kopieren
+      📋 HeartGPT 2.3.1 kopieren
       </button>
 
     </div>
@@ -518,16 +527,18 @@
   <section>
     <div class="container">
 
-      <h2>HeartGPT 2.3 Stable</h2>
+      <h2>HeartGPT 2.3.1 Stable</h2>
 
       <p class="intro">
-        2.3 Stable ist die erste öffentlich veröffentlichte Stable-Version von HeartGPT.
+        2.3.1 Stable ergänzt die erste Stable-Version 2.3 um methodische Neutralitätskorrekturen.
       </p>
+
+      <p>Du nutzt bereits HeartGPT 2.3? Mit dem Update-Prompt kannst du deinen laufenden Chat auf 2.3.1 umstellen und frühere Bewertungen anhand der neuen Neutralitätsregeln überprüfen lassen.</p>
 
       <div class="buttons" style="justify-content:flex-start">
 
         <a class="button primary"
-           href="https://github.com/djbalego/HeartGPT/blob/main/prompts/v2.3-stable/HeartGPT-2.3-Stable.md">
+           href="https://github.com/djbalego/HeartGPT/blob/main/prompts/v2.3-stable/HeartGPT-2.3.1.md">
           Hauptprompt
         </a>
 
@@ -560,7 +571,7 @@
     <div class="footer-line">
 
       <div>
-        <strong>HeartGPT 2.3 Stable</strong><br>
+        <strong>HeartGPT 2.3.1 Stable</strong><br>
         © 2026 Dirk Baur
       </div>
 
@@ -624,11 +635,25 @@
   // --------------------------------------------------
 
   async function copyHeartGPT(button) {
+    return copyPrompt(button,
+      "prompts/v2.3-stable/HeartGPT-2.3.1.md",
+      "heartgpt-copies",
+      "✓ HeartGPT kopiert");
+  }
+
+  async function copyUpdate(button) {
+    return copyPrompt(button,
+      "prompts/v2.3-stable/HeartGPT-2.3-auf-2.3.1-Update.md",
+      "heartgpt-update-copies",
+      "✓ Update-Prompt kopiert");
+  }
+
+  async function copyPrompt(button, path, counterKey, successText) {
     const originalText = button.innerHTML;
 
     try {
       const response = await fetch(
-        "https://raw.githubusercontent.com/djbalego/HeartGPT/main/prompts/v2.3-stable/HeartGPT-2.3-Stable.md"
+        "https://raw.githubusercontent.com/djbalego/HeartGPT/main/" + path
       );
 
       if (!response.ok) {
@@ -641,14 +666,14 @@
       await navigator.clipboard.writeText(prompt);
 
       // Nur nach erfolgreichem Kopieren zählen
-      heartGPTCounter.up("heartgpt-copies")
+      heartGPTCounter.up(counterKey)
         .catch(error => {
           // Ein Fehler beim Zähler darf das erfolgreiche
           // Kopieren nicht beeinträchtigen.
           console.error("HeartGPT Kopierzähler:", error);
         });
 
-      button.innerHTML = "✓ HeartGPT kopiert";
+      button.innerHTML = successText;
 
       setTimeout(() => {
         button.innerHTML = originalText;
