@@ -276,7 +276,7 @@
   <section class="hero">
     <div class="container">
 
-      <span class="badge">HeartGPT 2.3.1 Stable</span>
+      <span class="badge">HeartGPT 2.3.2 Stable</span>
 
       <h1>Gedanken sortieren.<br>Statt Overthinking zu verstärken.</h1>
 
@@ -290,12 +290,12 @@
       <div class="buttons">
        <button class="button primary copy-button"
               onclick="copyHeartGPT(this)">
-          📋 HeartGPT 2.3.1 kopieren
+          📋 HeartGPT 2.3.2 kopieren
        </button>
 
         <button class="button secondary copy-button"
                 onclick="copyUpdate(this)">
-          🔄 Bestehenden 2.3-Chat aktualisieren
+          🔄 Bestehenden 2.3.1-Chat aktualisieren
         </button>
 
         <a class="button secondary"
@@ -392,7 +392,7 @@
 
         <div class="step">
           <strong>1. HeartGPT kopieren</strong>
-          Klicke auf „HeartGPT 2.3.1 kopieren“. Der vollständige HeartGPT-Prompt
+          Klicke auf „HeartGPT 2.3.2 kopieren“. Der vollständige HeartGPT-Prompt
           wird automatisch in deine Zwischenablage kopiert.
         </div>
 
@@ -429,7 +429,7 @@
 
       <button class="button primary copy-button"
           onclick="copyHeartGPT(this)">
-      📋 HeartGPT 2.3.1 kopieren
+      📋 HeartGPT 2.3.2 kopieren
       </button>
 
     </div>
@@ -523,18 +523,18 @@
   <section>
     <div class="container">
 
-      <h2>HeartGPT 2.3.1 Stable</h2>
+      <h2>HeartGPT 2.3.2 Stable</h2>
 
       <p class="intro">
-        2.3.1 Stable ergänzt die erste Stable-Version 2.3 um methodische Neutralitätskorrekturen.
+        2.3.2 Stable übernimmt alle Neutralitätskorrekturen von 2.3.1 unverändert. Neu ist ausschließlich ein fester Versionshinweis am Ende jeder Antwort.
       </p>
 
-      <p>Du nutzt bereits HeartGPT 2.3? Mit dem Update-Prompt kannst du deinen laufenden Chat auf 2.3.1 umstellen und frühere Bewertungen anhand der neuen Neutralitätsregeln überprüfen lassen.</p>
+      <p>Du nutzt bereits HeartGPT 2.3.1? Aktualisiere deinen laufenden Chat auf 2.3.2, ohne bestehende Bewertungen neu prüfen zu lassen. Für ältere Versionen stehen die bisherigen Update-Schritte weiterhin bereit.</p>
 
       <div class="buttons" style="justify-content:flex-start">
 
         <a class="button primary"
-           href="https://github.com/djbalego/HeartGPT/blob/main/prompts/v2.3-stable/HeartGPT-2.3.1.md">
+           href="https://github.com/djbalego/HeartGPT/blob/main/prompts/v2.3-stable/HeartGPT-2.3.2.md">
           Hauptprompt
         </a>
 
@@ -546,6 +546,15 @@
         <button class="button secondary copy-button" onclick="copyUpdate(this)">
           🔄 Update-Prompt kopieren
         </button>
+
+        <button class="button secondary copy-button" onclick="copyPreviousUpdate(this)">
+          🔄 Update 2.3 → 2.3.1 kopieren
+        </button>
+
+        <a class="button secondary"
+           href="https://github.com/djbalego/HeartGPT/tree/main/prompts/v2.3-stable">
+          Ältere Versionen auf GitHub
+        </a>
 
         <a class="button secondary"
            href="USAGE.md">
@@ -571,7 +580,7 @@
     <div class="footer-line">
 
       <div>
-        <strong>HeartGPT 2.3.1 Stable</strong><br>
+        <strong>HeartGPT 2.3.2 Stable</strong><br>
         © 2026 Dirk Baur
       </div>
 
@@ -636,15 +645,22 @@
 
   async function copyHeartGPT(button) {
     return copyPrompt(button,
-      "prompts/v2.3-stable/HeartGPT-2.3.1.md",
+      "prompts/v2.3-stable/HeartGPT-2.3.2.md",
       "heartgpt-copies",
       "✓ HeartGPT kopiert");
   }
 
   async function copyUpdate(button) {
     return copyPrompt(button,
-      "prompts/v2.3-stable/HeartGPT-2.3-auf-2.3.1-Update.md",
+      "prompts/v2.3-stable/HeartGPT-2.3.1-auf-2.3.2-Update.md",
       "heartgpt-update-copies",
+      "✓ Update-Prompt kopiert");
+  }
+
+  async function copyPreviousUpdate(button) {
+    return copyPrompt(button,
+      "prompts/v2.3-stable/HeartGPT-2.3-auf-2.3.1-Update.md",
+      "heartgpt-previous-update-copies",
       "✓ Update-Prompt kopiert");
   }
 
