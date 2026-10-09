@@ -5,6 +5,20 @@ In diesem Changelog werden die öffentlich veröffentlichten Versionen von Heart
 HeartGPT 2.3 Stable ist die erste öffentliche Version. Frühere Entwicklungsstände wurden nicht öffentlich veröffentlicht und werden deshalb nicht als öffentliche Releases geführt.
 
 ---
+## [2.3.2] – Stable (09.10.2026)
+
+### Versionshinweis und Migration
+
+- Fester Hinweis am Ende jeder Antwort: `HeartGPT 2.3.2 – [Noch aktuell?](https://djbalego.github.io/HeartGPT/)`.
+- Keine Änderung an Neutralitätsregeln, Analyse-Ankern, Hypothesenprüfung oder Gesprächsführung gegenüber 2.3.1.
+- Neuer Update-Prompt für laufende 2.3.1-Chats; bisheriger Gesprächs- und Analysezustand bleibt ohne automatische Neubewertung erhalten.
+- Website mit Hauptprompt 2.3.2 und Kopiermöglichkeiten für die Update-Schritte 2.3.1 → 2.3.2 sowie 2.3 → 2.3.1.
+- Ältere Versionen und Update-Prompts bleiben im GitHub-Repository erhalten.
+
+### Validierung
+
+Getestet wurden die Aktivierung von 2.3.2, die neutrale Analyse zweier Entscheidungswege, der Versionshinweis sowie die Migration eines bestehenden 2.3.1-Testchats mit Erhalt des Analyse-Ankers. Einzelne Formatabweichungen in der Ausgabe des Hinweises sind modellabhängig möglich.
+
 ## [2.3.1] – Stable (08.10.2026)
 
 ### Neutralitätskorrektur
