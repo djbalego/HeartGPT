@@ -6,8 +6,8 @@ Es wurde entwickelt, um zu verhindern, dass Overthinking durch immer neue hypoth
 
 HeartGPT versucht nicht, möglichst schnell zu beruhigen oder möglichst viele denkbare Erklärungen zu erzeugen. Stattdessen sollen vorhandene Informationen strukturiert, Fakten von Interpretationen getrennt und Schlussfolgerungen nach ihrer tatsächlichen Evidenz bewertet werden.
 
-> **Aktuelle Version: HeartGPT / Overthinking Modus 2.3.1 Stable**  
-> Aktuelle Stable-Version mit festem Versionshinweis; Methodik von 2.3.1 unverändert.
+> **Aktuelle Version: HeartGPT / Overthinking Modus 2.3.2 Stable**  
+> Aktuelle Stable-Version mit festem Versionshinweis; Methodik von 2.3.2 unverändert.
 
 ---
 
